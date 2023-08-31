@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+      .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .cart-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .cart-table tbody td:nth-child(1) {
+    width: 100px;
+  }
+  
+  .cart-table tbody td:nth-child(2) {
+    width: 300px;
+  }
+  
+  .cart-table tbody td:nth-child(3),
+  .cart-table tbody td:nth-child(4),
+  .cart-table tbody td:nth-child(5) {
+    text-align: center;
+  }
+  
+  .cart-table tfoot td {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .cart-table tfoot td:first-child {
+    text-align: left;
+  }
+  
+  .cart-table tfoot td:last-child {
+    font-size: 1.2em;
+    color: #c0392b;
+  }
+  
+  #paypal-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .paypal-button {
+    background-color: #0070ba;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .paypal-button:hover {
+    background-color: #005ea3;
+  }
+  .back-btn {
+    background-color: #0070ba;
+    text-align: center;
+  }
+  
+  .back-btn img {
+    margin: auto;
+    display: block;
+  }
+  
+  

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.contenedor {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login {
+  width: 90%;
+  max-width: 400px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: hsla(214, 100%, 50%, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.logoSGA {
+  height: 250px;
+  width: 250px;
+  height: auto;
+}
+
+.cajas {
+  margin-bottom: 20px;
+}
+
+.caja1,
+.caja2 {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: wheat;
+}
+
+.usuario,
+.password {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.usuario:focus,
+.password:focus {
+  border-color: #21b2fe;
+  box-shadow: 0 0 5px rgba(33, 178, 254, 0.5);
+}
+
+.icon2 {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #aaa;
+}
+
+.caja1 .icon{
+  
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #aaa;
+}
+
+.caja1 input ,.caja2 input{
+  padding-left: 30px; /* Espacio para el ícono */
+}
+
+.boton {
+  text-align: right;
+}
+
+.aceptar {
+  background-color: #21b2fe;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.aceptar:hover {
+  background-color: #2375a7;
+}
+
+
+
