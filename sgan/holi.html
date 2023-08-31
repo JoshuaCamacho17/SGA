@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pop/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Menu principal | SGA</title>
+</head>
+<style>
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column1 {
+  background-color: #21b2fe;
+  width: 60vh;
+  height: 40vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoUsr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.imagenUsr {
+  text-align: center;
+ 
+}
+
+.imgUsr {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.saludo {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Hola {
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+  margin-left: 20px;
+}
+
+
+.column {
+  background-color: #a5defb;
+  width: 60vh;
+  height: 95vh;
+  border-radius: 30px;
+  position: absolute;
+  top: 250px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circles-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circle,
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1a79b2;
+  margin: 15px;
+}
+
+.circle a,
+.circle1 a,
+.circle2 a,
+.circle3 a,
+.circle4 a,
+.circle5 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.circle img,
+.circle1 img,
+.circle2 img,
+.circle3 img,
+.circle4 img,
+.circle5 img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.circle label,
+.circle1 label,
+.circle2 label,
+.circle3 label,
+.circle4 label,
+.circle5 label {
+  margin-top: 5px;
+  text-align: center;
+
+}
+  </style>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="column1">
+            <div class="infoUsr">
+                <img src="img/usuario.jpg" class="imgUsr" width="90px" height="90px" ><nr>
+                <br><label class="saludo">Hola Chems</label><br>
+                <label class="Hola">Buenas tardes</label>
+            </div>
+          </div>
+          <div class="column">
+              <div class="circles-container">
+                    <div class="circle">
+                      <a href=""><img src="img/menu/provedores.svg" class="provedores" width="90px" height="90px" ></a>
+                        <label>Provedores</label>
+                    </div>
+                    <div class="circle1">
+                      <button id="btn-abrir-popup" class="btn-abrir-popup" class="reporte" width="90px" height="90px">Abrir Ventana Emergente</button>
+                        <label>Usuarios</label>
+
+                        <div class="overlay" id="overlay">
+                          <div class="popup" id="popup">
+                            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                            <h3>Administrador</h3>
+                            <h4>Digite su contraseña de admin</h4>
+                            <form action="">
+                              <div class="contenedor-inputs">
+                                <input type="password" placeholder="Admin password">
+                              </div>
+                              <input type="submit" class="btn-submit" value="Aceptar">
+                            </form>
+                          </div>
+                        </div>
+
+                    </div>
+                    <div class="circle2">
+                      <a href=""><img src="img/menu/tiendas.svg" class="almacenes" width="90px" height="90px" ></a>
+                      <label class="alm">Almacenes</label>
+                    </div>
+              </div>
+              <div class="circles-container2">
+                <div class="circle3">
+                  <a href="galeria.php"><img src="img/menu/tools.svg" class="inventario" width="90px" height="90px" ></a>
+                  <label>Herramientas</label>
+                </div>
+                <div class="circle4">
+                  <a href="prestamos/galeria.php"><img src="img/menu/trato.svg" class="prestamos" width="90px" height="90px" ></a>
+                  <label>Prestamos</label>
+                </div>
+                <div class="circle5"><a href=""><img src="vectores/puerta.svg" class="cerrarSesion" width="90px" height="90px" ></a>
+                  <label>Salir</label>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+	overlay = document.getElementById('overlay'),
+	popup = document.getElementById('popup'),
+	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+
+btnAbrirPopup.addEventListener('click', function(){
+	overlay.classList.add('active');
+	popup.classList.add('active');
+});
+
+btnCerrarPopup.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay.classList.remove('active');
+	popup.classList.remove('active');
+});
+      </script>
+</body>
+</html>

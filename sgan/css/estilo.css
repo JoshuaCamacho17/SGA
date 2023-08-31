@@ -1,0 +1,23 @@
+
+
+table {
+    border-color: #fff;
+    border: 1px solid ;
+    border-collapse: separate;
+  }
+
+tr,th{
+    color: #000000;
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nombre, .precio, .descripcion {
+    margin-bottom: 10px;
+}
+
+  
